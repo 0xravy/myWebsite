@@ -4,7 +4,7 @@ I use
         Next.js + Tailwindcss 
 
 
-Demo: https://aravan-1.aravan.repl.co
+Demo: https://www.aravan.repl.co/
 
 
 <h1>Desktop</h1>
