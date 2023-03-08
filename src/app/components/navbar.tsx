@@ -1,10 +1,16 @@
 import Image from "next/image";
+import { BsFillLightningChargeFill } from "react-icons/bs";
 
 const Navbar = () => {
     return (
-        <header className="w-full sm:w-16 h-16 sm:h-screen absolute top-0 flex-col left-0">
+        <header className="fixed w-full sm:w-16 h-16 sm:h-screen z-50 top-0 flex-col left-0">
             <div className="w-full h-full flex flex-col justify-center items-center">
-                <div className="bg-secondary sm:w-2 h-2 sm:h-[30%] absolute top top-10"></div>
+                <span className="navbar-span top-24">
+                    <BsFillLightningChargeFill
+                        className="w-10 h-10 text-yellow-300 absolute top-0 translate-y-[-140%]"
+                        size="30"
+                    />
+                </span>
                 <ul className="flex sm:flex-col gap-8">
                     <a
                         href="#home"
@@ -48,11 +54,15 @@ const Navbar = () => {
                         <h1 className="navbar-item">💡Links</h1>
                     </a>
                 </ul>
-                <div className="bg-secondary w=[30%] sm:w-2 h-2 sm:h-[30%] absolute bottom-10"></div>
+                <span className="navbar-span bottom-24">
+                    <BsFillLightningChargeFill
+                        className="w-10 h-10 text-yellow-300 absolute bottom-0 translate-y-[140%]"
+                        size="30"
+                    />
+                </span>
             </div>
         </header>
     );
 };
 
 export default Navbar;
-
